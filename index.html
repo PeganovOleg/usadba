@@ -1,129 +1,197 @@
 <!doctype html>
 <html>
   <head>
-    <title>Фазенда Игоря</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УСАДЬБА ИГОРЯ | "КРУГЛОЕ ОЗЕРО"</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header id="header">
-      <a href="#" class="logo">Фазенда "Круглое Озеро"</a>
-      <ul>
-        <li><a href="#" class="active">Главная</a></li>
+    <header>
+      <a href="#" class="logo"></a>
+      <div class="menuToggle"></div>
+    </header>
+    <ul class="navigation">
+      <li><a href="#home" onclick="toggleMenu();">Главня</a></li>
+      <li><a href="#about" onclick="toggleMenu();">О нас</a></li>
+      <li><a href="#post" onclick="toggleMenu();">Фото</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Контакты</a></li>
+    </ul>
+    <section class="banner" id="home">
+      <img src="banner.jpg" class="cover">
+      <div class="contentBx">
+        <h2>УСАДЬБА ИГОРЯ </h2>
+        <h4>"КРУГЛОЕ ОЗЕРО"</h4>
+        <a href="#about" class="btn">О нас</a>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="title">
+        <h2>О нас</h2>
+      </div>
+      <div class="contentbx">
+        <div class="content">
+          <p>Тут нужно придумать и написать небольшую историю<br><br>Нужно, конечно, историю Круглого озера и все такое.Коротко об усадьбе, отдыхе и т.д. Можно подобную фотку даже</p>
+        </div>
+        <div class="content">
+          <div class="imgBx"><img src="img1.jpg" class="cover"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="post" class="post">
+      <div class="title">
+        <h2>ФОТОГАЛЕРЕЯ</h2>
+        <p>Фото Усадьбы</p>
+      </div>
+      <div class="contentBx">
+        <div class="postColumn">
+          <div class="postBox">
+            <div class="imgBx">
+              <img src="post1.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Удобный заез , ворота , парковка-все на территории усадьбы</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="postBox">
+            <div class="imgBx">
+              <img src="post2.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Во дворе усадьбы есть небольшой прудик.</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="postBox extraHeight">
+            <div class="imgBx">
+              <img src="post3.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Каменная стена</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="postColumn">
+          <div class="postBox extraHeight">
+            <div class="imgBx">
+              <img src="post4.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Прудик</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="postBox">
+            <div class="imgBx">
+              <img src="post5.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Каменная черепаха.</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="postBox">
+            <div class="imgBx">
+              <img src="post6.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Мотоцикл</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="postColumn">
+          <div class="postBox">
+            <div class="imgBx">
+              <img src="post7.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Русская печь.Действующая!</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="postBox">
+            <div class="imgBx">
+              <img src="post8.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Русская печка</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="postBox extraHeight">
+            <div class="imgBx">
+              <img src="post9.jpg" class="cover">
+            </div>
+            <div class="textBx">
+              <h3>Деревянная лестница наверх</h3>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="title">
+        <h2>КОНТАКТЫ</h2>
+        <p>предпочтительнее звонить на теле2</p>
+      </div>
+      <div class="contactForm">
+        <div class="row">
+          <input type="text" name="" placeholder="Адрес:с.Горное, ул.Игоря,56">
+          
+        </div>
+        <div class="row">
+          
+          <input type="text" name="" placeholder="+7918951-27-69">
+        </div>
+        <div class="row">
+          
+          <input type="text" name="" placeholder="+7960493-98-25">
+        </div>
+        <div class="title">
+          <a href="#" class="btn mgt40">наверх</a>
+      </div>
+             
+      </div>
+    </section>
+
+    <footer>
+     
+       <h2>УСАДЬБА</h2>
+        <h2>"КРУГЛОЕ ОЗЕРО"</h2>
+      <ul class="footerMenu">
+        <li><a href="#">Главная</a></li>
         <li><a href="#">О нас</a></li>
+        <li><a href="#">Фото</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-    </header>
- 
-    <section>
-      <h2 id="text"><span>выберите время для</span></br>Отдыха</h2>
-      <img src="bird1.png" id="bird1">
-      <img src="bird2.png" id="bird2">
-      <img src="forest.png" id="forest">
-      <img src="rocks.png" id="rocks">
-      <img src="water.png" id="water">
-    </section>
-  
-    <div class="sec" id="sec">
-      <h2>Фазенда Игоря</h2>
-      <p>Фазенда Игоря.<br><br>Фазенда Игоря.<br><br>Фазенда Игоря.<br><br>Фазенда Игоря.</p>
-    </div>
+      <p class="copyrightText">Copyright © 2021.Oleg</p>
+    </footer>
+    <script type="text/javascript">
+      const menuToggle = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation');
+      menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
 
-      <script>
-      let forest = document.getElementById('forest');
-      let rocks = document.getElementById('rocks');
-      let water = document.getElementById('water');
-      let bird1 = document.getElementById('bird1');
-      let bird2 = document.getElementById('bird2');
-      let text = document.getElementById('text');
-      let btn = document.getElementById('btn');
-      let header = document.getElementById('header');
+      window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
 
-      window.addEventListener('scroll', function(){
-        let value = window.scrollY;
-        forest.style.top = value * 0.25 + 'px';
-        rocks.style.top = value * -0.12 + 'px';
-        text.style.top = 40 + value * -0.07 + '%';
-        btn.style.marginTop = value * 1.5 + 'px';
-        header.style.top = value * 0.5 + 'px';
-        bird1.style.top = value * -1.5 + 'px';
-        bird1.style.left = value * 2 + 'px';
-        bird2.style.top = value * -1.5 + 'px';
-        bird2.style.left = value * -5 + 'px';
-      })
+      // now, we fix menu active class issue for mobile devices
+      function toggleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        navigation.classList.remove('active');
+        menuToggle.classList.remove('active');
+      }
     </script>
- 
-
-<div class="body2">
-<div class="container">
-    <div class="card">
-      <div class="imgBx">
-        <img src="img1.jpg">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h3></h3>
-          <p>красивая природа.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="img2.jpg">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h3></h3>
-          <p>красивая природа.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="img3.jpg">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h3></h3>
-          <p>красивая природа</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="img4.jpg">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h3></h3>
-          <p>красивая природа.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="img5.jpg">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h3></h3>
-          <p>красивая природа</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="img6.jpg">
-      </div>
-      <div class="contentBx">
-        <div class="content">
-          <h3></h3>
-          <p>красивая природа.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
-<body>
-  
-  
+  <body>
 </html>
