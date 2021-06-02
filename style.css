@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 *
 {
     margin: 0;
@@ -497,3 +498,99 @@ a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
  .tesuen_2_z::before{background-color:#5b9a46;content:"1";width:35px;height:100%;max-height:31px;position:absolute;display:block;padding-top:8px;top:0px;left:-36px;font-size:18px;font-weight:bold;color:#abea96;text-shadow:1px 1px 0px #155400;border-right:solid 1px #155400;background-image:linear-gradient(to top, #155400 0%, #6fae11 100%);background-image:-o-linear-gradient(to top, #155400 0%, #6fae11 100%);background-image:-moz-linear-gradient(to top, #155400 0%, #6fae11 100%);background-image:-webkit-linear-gradient(to top, #155400 0%, #6fae11 100%);background-image:-ms-linear-gradient(to top, #155400 0%, #6fae11 100%);-webkit-border-top-left-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-bottomleft:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;-webkit-box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 0 10px 5px #999;-moz-box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 0 10px 5px #999;-o-box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 0 10px 5px #999;box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 0 10px 5px #999;}
  .tesuen_2_z:active::before{top:-3px;-webkit-box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 1px 1px 0 0 #2c6b00, 2px 2px 0 0 #559429, 2px 5px 0 0 #2c6b00, 6px 4px 2px #246307, 0 10px 5px #999;-moz-box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 1px 1px 0 0 #2c6b00, 2px 2px 0 0 #559429, 2px 5px 0 0 #2c6b00, 6px 4px 2px #246307, 0 10px 5px #999;-o-box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 1px 1px 0 0 #2c6b00, 2px 2px 0 0 #559429, 2px 5px 0 0 #2c6b00, 6px 4px 2px #246307, 0 10px 5px #999;box-shadow:0 1px 0 #5b9a46 inset, 0 5px 0 0 #003d00, 1px 1px 0 0 #2c6b00, 2px 2px 0 0 #559429, 2px 5px 0 0 #2c6b00, 6px 4px 2px #246307, 0 10px 5px #999;}
  .sec_but::before{content:"2";}
+
+
+ #slider-wrap{ 
+    max-width:450px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#active-slide {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slider{
+    position: relative;
+    width: calc(100% * 9);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.slide{
+    width: calc(100%/9);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide img {
+    width:100%;
+}
+
+.Radio-But{
+    margin-top:10px;
+    text-align:center;
+}
+
+.Radio-But .ctrl-select {
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(radioBg.png) center bottom no-repeat;
+}
+
+.Radio-But .ctrl-select:hover {
+    cursor:pointer;
+    background-position:center center;
+}
+
+.Radio-But .ctrl-select.active {
+    background-position:center top;
+}
+
+#prewbutton, #nextbutton {
+    display:block;
+    width:40px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    background: url("arrowBg.png") left center no-repeat;
+    opacity:0.5;
+    z-index:3;
+    outline:none !important;
+}
+
+#prewbutton {
+    left:10px;
+}
+
+#nextbutton {
+    right:10px;
+    background:url(arrowBg.png) right center no-repeat;
+}
+
+#prewbutton:hover, #nextbutton:hover {
+    opacity:1;
+}
