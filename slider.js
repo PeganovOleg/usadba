@@ -57,7 +57,7 @@ var animSlide = function(arrow){
         });
         var pause = false;
         var rotator = function(){
-               if(!pause){slideTime = setTimeout(function(){animSlide('next')}, TimeView);}
+               if(!pause){slideTime = setInterval(function(){animSlide('next')}, TimeView);}
                }
         $('#slider-wrap').hover(
            function(){clearTimeout(slideTime); pause = true;},
