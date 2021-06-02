@@ -456,3 +456,14 @@ footer .footerMenu li a
         margin: 5px 0;
     }
 }
+
+.phone {
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
+.phone a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+}
