@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 var timeList = 700;
-var TimeView = 5000;
+var TimeView = 2500;
 var RadioBut = true;
 
 var slideNum = 1;
@@ -9,7 +9,7 @@ var slideTime;
 slideCount = $("#slider .slide").length;
 
 var animSlide = function(arrow){
-    clearTimeout(slideTime); 
+    
 
     if(arrow == "next"){
 	  if(slideNum == slideCount) { slideNum=1; }
