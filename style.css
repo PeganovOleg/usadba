@@ -501,7 +501,7 @@ a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 
 
  #slider-wrap{ 
-    max-width:450px;
+    max-width:650px;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -520,7 +520,7 @@ a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 
 #slider{
     position: relative;
-    width: calc(100% * 9);
+    width: calc(100% * 23);
     top: 0;
     left: 0;
     margin: 0;
@@ -534,7 +534,7 @@ a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
 }
 
 .slide{
-    width: calc(100%/9);
+    width: calc(100%/23);
     list-style: none;
     display: inline;
     float: left;
